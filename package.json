@@ -1,0 +1,29 @@
+{
+  "scripts": {
+    "test": "mocha --timeout 10000",
+    "test2": "jest",
+    "start-gendoc": "node swagger.js",
+    "dotest": "jest tests/auth.test.js && npx jest tests/news.test.js && npx jest tests/contact.test.js && npx jest tests/user.test.js && npx jest tests/subscription.test.js "
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "bcryptjs": "^2.4.3",
+    "chai": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^6.9.14",
+    "sequelize": "^6.37.3",
+    "sinon": "^18.0.0",
+    "sqlite3": "^5.1.7",
+    "stripe": "^15.12.0",
+    "swagger-autogen": "^2.23.7",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
+}
